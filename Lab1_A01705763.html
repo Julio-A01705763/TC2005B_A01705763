@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Laboratorio 1</title>
+        <meta charset="utf-8"/>
+
+    </head>
+    <body>
+        <h1>Laboratorio 1</h1>
+        <nav>
+            <ul>
+                <li>Informacion</li>
+                <li>Informacion 2</li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <header>
+                    <h3>¿Cuál es la diferencia entre Internet y la World Wide Web?</h3>
+                </header>
+                <p>Internet es una red de computadoras conectadas, por otro lado World Wide Web es una gran coleccion de paginas web que se encuentra en el Internet</p>
+                <footer><a href="https://www.bbc.com/mundo/noticias-47538812#:~:text=Internet%20es%20una%20inmensa%20red,para%20acceder%20a%20la%20web.">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuáles son las partes de un URL?</h3>
+                </header>
+                <p>Las partes de un dominio son el protocolo, el dominio, la ruta y el parametro</p>
+                <footer><a href="https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h3>
+                </header>
+                <p>Son el formato de comunicación entre el cliente y servidor web.</p>
+                <ul>
+                    <li>Get: Reaiza una peticion en específico</li>
+                    <li>Head: Este método de petición es similar al método HTTP GET, sin embargo no retorna ningún contenido HTTP Response.</li>
+                    <li>Post: Puede enviar datos al servidor por medio del cuerpo </li>
+                    <li>Put: Es similar al método de petición POST, solo que el método PUT es idempotente; es decir puede ser ejecutado varias veces y tiene el mismo efecto</li>
+                    <li>Patch: Este método se emplea para modificaciones parciales de un recurso en particular.</li>
+                    <li>Delete: Este método de petición permite eliminar un recurso específico.</li>
+                </ul>
+                <footer><a href="http://estilow3b.com/metodos-http-post-get-put-delete/#:~:text=Este%20m%C3%A9todo%20se%20utiliza%20para,acepta%20peticiones%20de%20diferentes%20or%C3%ADgenes.">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h3>
+                </header>
+                <p>Se usaria el metodo post por que:</p>
+                <ul>
+                    <li>El método POST no tiene límite de cantidad de información a enviar.</li>
+                    <li>La información proporcionada no es visible, por lo que se puede enviar información sensible.</li>
+                    <li>Se puede usar para enviar texto normal así como datos binarios (archivos, imágenes...).</li>
+                </ul>
+                <footer><a href="https://diego.com.es/get-y-post-en-php#:~:text=M%C3%A9todo%20HTTP%20POST,-Con%20el%20m%C3%A9todo&text=El%20m%C3%A9todo%20POST%20no%20tiene,%2C%20im%C3%A1genes...).">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h3>
+                </header>
+                <p>Se usa el metodo GET, ya que, una petición GET solicita al servidor una información o recurso concreto.</p>
+                <footer><a href="https://kinsta.com/es/base-de-conocimiento/que-es-una-peticion-http/">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h3>
+                </header>
+                <p>Los codiogs 200 no significan un error. Significan que la pagina cargo correctamente.</p>
+                <footer><a href="https://www.webempresa.com/blog/tipos-errores-http-como-resolverlos.html#:~:text=C%C3%B3digo%20200%3A%20esto%20no%20es,todo%20va%20como%20la%20seda.">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h3>
+                </header>
+                <p>No es responsabilidad del desarrollador, debido a que las razones para que ocurra un error 404 no dependen de la pagina. Algunos ejemplos puden ser:</p>
+                <ul>
+                    <li>La dirección URL o sus contenidos se han eliminado o cambiado.</li>
+                    <li>El enlace no se colocó correctamente. </li>
+                    <li>El servidor web responsable no está en funcionamiento o hay problemas de conexión.</li>
+                    <li>El nombre de dominio solicitado no puede ser convertido en una dirección IP por el Domain Name System.</li>
+                    <li>El nombre de dominio (ya) no existe.</li>
+                </ul>
+                <footer><a href="https://www.ionos.mx/digitalguide/paginas-web/creacion-de-paginas-web/que-significa-el-error-404-not-found/">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h3>
+                </header>
+                <p>Si debido a que el error HTTP 500, indica que el servidor ha encontrado una condición inesperada que le impidió cumplir con la solicitud para ingresar al sitio web. Debido a esto es responsabilidad del desarrollador arreglar el problema que impide que los usuarios puedan acceder a su pagina.</p>
+                <footer><a href="https://www.siteground.es/kb/500-internal-error/">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h3>
+                </header>
+                <p>Los atributos desaprobados son partes del estándar HTML cuyo uso ya no es recomendado.Esto sucede dado que el estándar es actualizado de vez en cuando y alguno tags o características del lenguaje son agregada, removidas o desaprobadas. Algunos son:</p>
+                <ul>
+                    <li>applet: Reemplazado por el tag HTML object.</li>
+                    <li>dir: Reemplazado por el tag HTML ul.</li>
+                    <li>isindex: Reemplazado por el tag HTML input.</li>
+                    <li>menu: Reemplazado por el tag HTML ul.</li>
+                </ul>
+                <footer><a href="https://sites.google.com/site/dwebhtml/reference/deprecated">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h3>
+                </header>
+                <p>HTML5 mejora algunos aspectos de HTML4. HTML5 puede hacer muchas cosas de forma nativa, mientras que HTML4 depende por completo de sistemas como Silverlight, Java Web Start y Flash.</p>
+                <footer><a href="https://kinsta.com/es/blog/html-vs-html5/#:~:text=Como%20ya%20se%20ha%20dicho,Java%20Web%20Start%20y%20Flash.">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Qué componentes de estructura y estilo tiene una tabla?</h3>
+                </header>
+                <p> Una tabla HTML (table) es un conjunto de celdas (td o th) organizadas en filas (tr) que a su vez se organizan en grupos de filas (thead, tbody o tfoot>./p>
+                <footer><a href="https://www.mclibre.org/consultar/htmlcss/html/html-tablas.html#:~:text=Estructura%20de%20una%20tabla%20()&text=Una%20tabla%20HTML%20(,%3E%20y%20).">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuáles son los principales controles de una forma HTML5?</h3>
+                </header>
+                <p> Algunos de los principales controles de HTML5 son: input(tiene nuevos valores en type), list, pattern, formmethod)</p>
+                <footer><a href="https://developer.mozilla.org/es/docs/Learn/Forms">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes utilizar la siguiente página para descubrirlo: http://html5test.com/ (Al responder la pregunta recuerda poner el navegador que utilizas)</h3>
+                </header>
+                <p>El navegador que utilizo tiene una puntuacion de 476 de 555</p>
+                <footer><a href="http://html5test.com/">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuál es el ciclo de vida de los sistemas de información?</h3>
+                </header>
+                <p>El ciclo de vida de los sistemas de información es: </p>
+                <ul>
+                    <li>Planeación</li>
+                    <li>Analisis</li>
+                    <li>Diseño</li>
+                    <li>Implementación</li>
+                    <li>Mantenimiento</li>
+                </ul>
+                <footer><a href="https://www.tecnologias-informacion.com/ciclodevida.html">Mas Informacion</a></footer>
+            </article>
+            <article>
+                <header>
+                    <h3>¿Cuál es el ciclo de desarrollo de sistemas de información?</h3>
+                </header>
+                <p>El ciclo de desarrollo de los sistemas de información es:</p>
+                <ul>
+                    <li>Planeación</li>
+                    <li>Analisis</li>
+                    <li>Diseño</li>
+                    <li>Implementación</li>
+                    <li>Pruebas</li>
+                    <li>Instalacion o despliegue</li>
+                    <li>Uso</li>
+                    <li>Mantenimiento</li>
+                </ul>
+                <footer><a href="https://cibertareas.info/ciclo-de-vida-de-los-sistemas-de-informacion-sistemas-de-informacion.html">Mas Informacion</a></footer>
+            </article>
+        </section>
+        <aside>
+            <p>Julio Cesar Perez Rodriguez - A01705763 - TC2005B - A01705763@tec.mx</p>
+            <p>Me gustan mucho los videojuegos y los esport. Me gusta ver peliculas. </p>
+        </aside>
+        <footer>
+            <p>Editor utilizado: </p>
+            <a href="https://code.visualstudio.com/">Visual Studio</a>
+        </footer>
+    </body>
+</html>
