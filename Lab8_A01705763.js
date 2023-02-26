@@ -18,19 +18,12 @@ const readline = require('readline').createInterface({
   
   readline.question('Identificate:', name => {
     filesystem.writeFileSync('Prueba2_Lab8.txt', 'Hi '+name);
+    readline.close();
   });
 
 //------------------------------------------------------------------
 
 //Prueba 3 ---------------------------------------------------------
-//Calcular la propina con un 15%
-var cost;
-readline.question('Escribe el costo de la comida:', comida => {
-    cost=comida;
-    readline.close();
-  });
-propina=cost*0.15;
-total=propina+cost;
 
 //------------------------------------------------------------------
 
@@ -42,10 +35,6 @@ const server = http.createServer( (request, response) => {
     response.write("<h1> Laboratorio 8 </h1>");
     response.write("<h2> Prueba 1 </h2>");
     response.write("Promedio= "+ promedio);
-    response.write("<h2> Prueba 3 </h2>");
-    response.write("Costo de la comida: "+ cost);
-    response.write("Propina: "+ propina);
-    response.write("Total a pagar: "+ total);
     response.end();
 });
 
