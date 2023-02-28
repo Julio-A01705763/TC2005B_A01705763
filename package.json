@@ -5,6 +5,8 @@
   "main": "app.js",
   "dependencies": {
     "ansi-regex": "^4.1.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
     "prompt-sync": "^4.2.0",
     "strip-ansi": "^5.2.0"
   },
@@ -15,11 +17,11 @@
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "https://github.com/Julio-A01705763/TC2005B_A01705763.git"
   },
-  "keywords":[
+  "keywords": [
     "node",
     "tec"
   ],
