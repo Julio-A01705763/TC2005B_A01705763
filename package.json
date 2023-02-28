@@ -1,0 +1,17 @@
+{
+  "name": "app.js",
+  "version": "1.0.0",
+  "description": "Laboratorio 11",
+  "main": "app.js",
+  "dependencies": {
+    "ansi-regex": "^4.1.1",
+    "prompt-sync": "^4.2.0",
+    "strip-ansi": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Julio Perez",
+  "license": "ISC"
+}
