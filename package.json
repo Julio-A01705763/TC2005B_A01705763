@@ -1,5 +1,5 @@
 {
-  "name": "app.js",
+  "name": "Lab11",
   "version": "1.0.0",
   "description": "Laboratorio 11",
   "main": "app.js",
@@ -8,10 +8,21 @@
     "prompt-sync": "^4.2.0",
     "strip-ansi": "^5.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/Julio-A01705763/TC2005B_A01705763.git"
+  },
+  "keywords":[
+    "node",
+    "tec"
+  ],
   "author": "Julio Perez",
   "license": "ISC"
 }
