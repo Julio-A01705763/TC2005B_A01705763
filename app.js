@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({extended: false}));
 
 //Middleware
 app.use((request, response, next) => {
@@ -13,10 +16,17 @@ app.use((request, response, next) => {
 app.use('/hola', (request, response, next) => {
     response.send('Hola desde la ruta /hola');
 });
+
+const hockeyRutas = require('./routes/hockey.routes');
+
+app.use('/hockey', hockeyRutas);
+
 app.use((request, response, next) => {
     console.log("Tercer middleware");
+
+    response.status(404);
     //Envía la respuesta al cliente
-    response.send('Hola desde el tercer middleware');
+    response.send('Lo sentimos, esta ruta no existe');
 });
 
 
