@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laboratorio 6</title>
+</head>
+<body>
+    <h2>Validador de contraseñas</h2>
+        <section>
+            <article>
+                <label for="contraseña">Contraseña</label>
+                <input class = "input" type="password" placeholder="Escriba su contraseña" id="contraseña" onkeyup="return validar()" size="50">
+                <label for="re_contraseña">Reescriba la contraseña</label>
+                <input class = "input" type="password" placeholder="Reescriba su contraseña" id="re_contraseña" oninput="return comparar()">
+            </article>
+            <aside>
+                <ul>
+                    <li id="mayuscula"> 1 mayúscula o más</li>
+                    <li id="minuscula"> 1 minúscula o más</li>
+                    <li id="caracter_especial"> 1 caracter especial o más</li>
+                    <li id="numero"> 1 número o más</li>
+                    <li id="longitud">  Longitud de 6</li>
+                </ul>
+            </aside>
+        </section>
+    <script src="Lab6.js"></script>
+</body>
+</html>
