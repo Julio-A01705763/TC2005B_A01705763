@@ -1,0 +1,21 @@
+<%- include('includes/head.ejs') %>
+
+<h1 class="title">Registrar nuevo juego</h1>
+
+<form action="/juegos/nuevo" method="POST">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+
+    <label for="juego">Juego:</label>
+    <input required name="juego" id="juego" class="input is-rounded" type="text" placeholder="JUEGO">
+    <br><br>
+    <label for="descripcion">Descripcion:</label>
+    <input name="descripcion" id="descripcion" class="input is-rounded" type="text" placeholder="JUEGO">
+    <br><br>
+    <label for="precio">Precio:</label>
+    <input name="precio" id="precio" class="input is-rounded" type="text" placeholder="JUEGO">
+    <br><br>
+    <input class="button is-rounded is-danger" type="submit" value="Registrar">
+
+</form>
+
+<%- include('includes/foot.ejs') %>

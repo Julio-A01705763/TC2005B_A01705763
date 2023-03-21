@@ -1,0 +1,67 @@
+<%- include('./includes/head.ejs') %>
+
+<h1 class="title">Video Juegos</h1>
+
+<% if (privilegios.indexOf('crear_juegos') >= 0) { %>
+    <a href="/juegos/nuevo" class="button is-danger is-rounded">Registrar juego</a>
+<% } %>
+
+<br><br>
+
+<% if (mensaje != '') { %>
+    <div class="notification is-info is-light">
+        <%= mensaje %>
+    </div>
+<% } %>
+
+<% if (juegos.length > 0) { %>
+    <div class="columns">
+        <% let columns = 0; %>
+        <% for (let juego of juegos) { %>
+            <% if (columns % 4 == 0) { %>
+    </div>
+    <div class="columns">
+            <% } %>
+            <% columns++; %>
+            <div class="column">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img src="<%= juego.imagen %>" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img src="<%= juego.imagen %>" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4"><%= juego.juego %></p>
+                            </div>
+                        </div>
+                    
+                        <div class="content">
+                            <%= juego.descripcion %> 
+                            <br>
+                            <br>
+                            <%= juego.precio %>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% } %>
+    </div>
+<% } else { %>
+    <h1>No hay juegos registradas</h1>
+<% } %>   
+
+<% if (ultimo_juego != '') { %>
+        <div class="notification is-link is-light">
+            Último juego agregado: <%= ultimo_juego %>
+        </div>
+<% } %>
+
+
+<%- include('./includes/foot.ejs') %>
